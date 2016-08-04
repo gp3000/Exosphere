@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1 Create Account Tweet
+  div.form
+    form#dataForm
+      .input-group
+        span.input-group-addon
+          span.glyphicon.glyphicon-pencil
+        input.form-control(type='text', name="name" ,placeholder='name')
+    button#create(type="button" class="btn btn-default btn-block") Create
+  div.event
+    div#wait(style="display: none;") Wait please
+    div#result(style="display: none;")
+      .input-group
+        span.input-group-addon Your address is:
+        span#infoResp.form-control 
+
+block contentJs
+  script(src='/javascripts/createContract.js')

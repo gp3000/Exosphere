@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  div.botom
+  h1= title
+  p Welcome to  my first app ethereum
+  div.input your  address please
+    input(type="text" id="address")
+    button(id="search") Search
+  div.result(style="display:none")
+    div your account
+      span.address XXXX
+    div ether
+      span.balance XXX
+  
+block codeJs
+   script(src='javascripts/balance.js')
+

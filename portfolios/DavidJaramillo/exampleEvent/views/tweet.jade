@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1 Tweets
+  div.form
+    form#dataForm
+      .input-group
+        span#basic-addon1.input-group-addon @
+        input.form-control(type='text', name="address", placeholder='address')
+      .input-group
+        span#basic-addon1.input-group-addon
+        input.form-control(type='text', name="message", placeholder='message')
+    button#send(type="button" class="btn btn-default btn-block") Send
+  div.allEvent
+    div#wait(style="display: none;") Wait please
+    div#result(style="display: none;")
+      table#infoEvent(class="table")
+        thead
+          tr
+        tbody
+
+block contentJs
+  script(src='/javascripts/sendTweet.js')
+

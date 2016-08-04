@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  div.botom
+  h1= title
+  p.rule1 Send
+  div.input 
+    .input-group.input-group-lg
+      span.input-group-addon 
+        span.glyphicon.glyphicon-user(aria-hidden='true')
+        span AddressFrom
+      input.form-control( id="addrs1" style="height: 53px;" type='text', placeholder='adressFrom')
+    .input-group.input-group-lg
+      span.input-group-addon 
+        span.glyphicon.glyphicon-user(aria-hidden='true')
+        span PasswordFrom
+      input.form-control( id="pass" style="height: 53px;" type='text', placeholder='password')
+    .input-group.input-group-lg
+      span.input-group-addon 
+        span.glyphicon.glyphicon-user(aria-hidden='true')
+        span AddressTo
+      input.form-control#addrs2( style="height: 53px;" type='text', placeholder='adressTo')
+    button(  id="send") Send
+block codeJs
+   script(src='javascripts/send.js')
+

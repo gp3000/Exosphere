@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  div.botom
+  h1= title
+  p.rule1 query contract
+  div.input 
+    .input-group.input-group-lg
+      span.input-group-addon 
+        span.glyphicon.glyphicon-user(aria-hidden='true')
+      input.form-control#address( style="height: 53px;" type='text', placeholder='adress')
+      span.input-group-addon 
+        button(  id="search") Query
+block codeJs
+   script(src='javascripts/queryContract.js')
+
